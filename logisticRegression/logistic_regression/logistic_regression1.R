@@ -109,3 +109,5 @@ mod.wk.age.mar <- glm(everwrk ~ age_p + r_maritl, data = NH11,family = "binomial
 summary(mod.wk.age.mar)
 data.frame(Effect("r_maritl", mod.wk.age.mar))
 plot(Effect("r_maritl", mod.wk.age.mar))
+names(mod.wk.age.mar)
+class(mod.wk.age.mar)
