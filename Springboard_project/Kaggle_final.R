@@ -68,7 +68,7 @@ tweets_text_corpus = tm_map(tweets_text_corpus,stemDocument,language="english")
 frequencies=DocumentTermMatrix(tweets_text_corpus)
 inspect(frequencies[1000:1005,505:515])
 findFreqTerms(frequencies,lowfreq = 15)
-
+ 
 sparse= removeSparseTerms(frequencies,0.995)
 
 col=brewer.pal(6,"Dark2")
